@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    //Attempting to access a non-existent attribute
+    let x = document.getElementById("myDiv").getAttribute("nonExistentAttribute");
+    console.log(x); // Output: null.  No error thrown, but might lead to unexpected behavior.
+
+    //Using a tag incorrectly
+    let invalidImg = document.createElement("img src='invalid-image.jpg'");
+    document.body.appendChild(invalidImg); //This will not render an image correctly because the src attribute should be set separately.
+
+    //Forgetting to close tags
+    let unclosedDiv = document.createElement("div");
+    document.body.appendChild(unclosedDiv); 
+    //The div tag is not closed, this is valid HTML5 but can cause issues in older browsers or with poorly written parsers
+  </script>
+</body>
+</html>
