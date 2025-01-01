@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Accessing attributes safely
+    let myDiv = document.getElementById("myDiv");
+    let attributeValue = myDiv.getAttribute("id"); // Accessing an existing attribute
+    console.log(attributeValue); // Output: myDiv
+
+    //Creating img element correctly
+    let img = document.createElement("img");
+    img.src = 'https://via.placeholder.com/150'; // Setting src attribute correctly
+    document.body.appendChild(img);
+    
+    //Ensuring proper tag closure
+    let div = document.createElement("div");
+    div.innerHTML = "This div is properly closed";
+    document.body.appendChild(div);  
+  </script>
+</body>
+</html>
