@@ -1,0 +1,1 @@
+This repository demonstrates some uncommon HTML errors that might not immediately throw errors but lead to unexpected behavior in web applications.  The `bug.html` file contains the buggy code, while `bugSolution.html` provides corrected versions.
